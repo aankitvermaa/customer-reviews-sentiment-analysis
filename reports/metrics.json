@@ -1,0 +1,67 @@
+{
+  "dataset_file": "train.ft.txt.bz2",
+  "data_quality": {
+    "rows_raw": 120000,
+    "missing_text": 0,
+    "missing_or_invalid_label": 0,
+    "empty_reviews": 0,
+    "invalid_labels": 0,
+    "duplicate_reviews": 0,
+    "rows_clean": 120000,
+    "class_counts": {
+      "Negative": 59229,
+      "Positive": 60771
+    },
+    "rows_used": 100000
+  },
+  "train_rows": 80000,
+  "test_rows": 20000,
+  "selected": {
+    "preprocessing": "minimal",
+    "model": "linear_svm",
+    "tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "max_features": 50000,
+      "min_df": 2,
+      "max_df": 0.95,
+      "sublinear_tf": true
+    },
+    "hyperparameters": {
+      "C": 1.0
+    }
+  },
+  "cv_f1_mean": 0.9159985736380293,
+  "cv_f1_std": 0.0024243777575835633,
+  "cv_folds": 5,
+  "test_metrics": {
+    "accuracy": 0.91725,
+    "precision": 0.9168305151395989,
+    "recall": 0.9201776023680316,
+    "f1": 0.9185010095041118
+  },
+  "confusion_matrix": [
+    [
+      9019,
+      846
+    ],
+    [
+      809,
+      9326
+    ]
+  ],
+  "final_fit_time_s": 38.57,
+  "error_summary": {
+    "total_errors": 1655,
+    "error_rate": 0.08275,
+    "by_category": {
+      "mixed_sentiment": 1036,
+      "negation": 364,
+      "other_ambiguous": 254,
+      "short_review": 1
+    }
+  },
+  "total_runtime_s": 1370.2
+}

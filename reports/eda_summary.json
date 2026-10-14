@@ -1,0 +1,76 @@
+{
+  "data_quality": {
+    "rows_raw": 120000,
+    "missing_text": 0,
+    "missing_or_invalid_label": 0,
+    "empty_reviews": 0,
+    "invalid_labels": 0,
+    "duplicate_reviews": 0,
+    "rows_clean": 120000,
+    "class_counts": {
+      "Negative": 59229,
+      "Positive": 60771
+    },
+    "rows_used": 100000
+  },
+  "length_words": {
+    "count": 100000.0,
+    "mean": 79.97,
+    "std": 43.24,
+    "min": 10.0,
+    "25%": 44.0,
+    "50%": 72.0,
+    "75%": 110.0,
+    "max": 241.0
+  },
+  "length_by_class_median": {
+    "Negative": 76.0,
+    "Positive": 68.0
+  },
+  "top_words": {
+    "Negative": [
+      "book",
+      "movie",
+      "like",
+      "just",
+      "good",
+      "read",
+      "don",
+      "time",
+      "really",
+      "bad",
+      "buy",
+      "great",
+      "better",
+      "money",
+      "did",
+      "story",
+      "work",
+      "film",
+      "product",
+      "way"
+    ],
+    "Positive": [
+      "book",
+      "great",
+      "good",
+      "movie",
+      "read",
+      "like",
+      "just",
+      "love",
+      "best",
+      "time",
+      "really",
+      "story",
+      "album",
+      "cd",
+      "music",
+      "don",
+      "little",
+      "think",
+      "film",
+      "life"
+    ]
+  }
+}
